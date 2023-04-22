@@ -1,3 +1,37 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@ngehjulio 
+ansahmdevops30
+/
+maven-web-application
+Public
+Fork your own copy of ansahmdevops30/maven-web-application
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Beta Try the new code view
+maven-web-application/Jenkinsfile
+@ngehjulio
+ngehjulio Create Jenkinsfile
+Latest commit 7f8578b 15 minutes ago
+ History
+ 2 contributors
+@ngehjulio@mylandmarktech
+68 lines (60 sloc)  1.59 KB
+ 
+
 pipeline{
   agent any 
   tools {
@@ -39,16 +73,13 @@ pipeline{
        always{
       emailext body: '''Hey guys
 Please check build status.
-
 Thanks
 Landmark 
 +15147791676''', recipientProviders: [buildUser(), developers()], subject: 'success', to: 'paypal-team@gmail.com'
     }
 success{
       emailext body: '''Hey guys,
-
 Good job build and deployment is successful.
-
 Thanks
 Landmark
 +15147791676''', recipientProviders: [buildUser(), developers()], subject: 'success', to: 'paypal-team@gmail.com'
@@ -56,10 +87,10 @@ Landmark
 failure{
       emailext body: '''Hey guys
 Build failed. Please resolve issues.
-
 Thanks
 Landmark 
 +15147791676''', recipientProviders: [buildUser(), developers()], subject: 'success', to: 'paypal-team@gmail.com'
   }
     }   
     
+  }
