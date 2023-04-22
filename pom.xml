@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.29.154:8181/mylandmarktech/repository/tesla-web-releases/</url>
+	      <http://54.197.37.141:8181/mylandmarktech/repository/paypal-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://172.31.29.154:8181/mylandmarktech/repository/tesla-webapp-snapshots/</url>
+	      <url>http://54.197.37.141:8181/mylandmarktech/repository/paypal-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
